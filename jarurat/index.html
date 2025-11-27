@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cancer Awareness & Support</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <nav class="nav">
+      <div class="logo">
+        <span class="ribbon"></span> Jarurat<span>Care</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#top">Home</a>
+        <a href="#contact">Contact Us</a>
+
+        <!-- SETTINGS BUTTON -->
+        <div class="settings-btn" id="settingsBtn">Settings</div>
+
+        <!-- SETTINGS MENU -->
+        <div class="settings-menu" id="settingsMenu">
+          <div class="settings-item" id="toggleTheme">Switch Theme</div>
+          <div class="settings-item" id="openChat">Open Chat</div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CHAT BOX -->
+  <div id="chatBox">
+    <div class="chat-header">
+      <span>Support Chat</span>
+      <span id="chatClose" class="chat-close">✖</span>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="msg bot">Hello! How can I help you today?</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type a message..." />
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <h1>Together We Fight With Hope.</h1>
+      <p>
+        Supporting patients, survivors and families with awareness, compassion,
+        and strength.
+      </p>
+      <a href="#contact" class="hero-cta">Get Support →</a>
+    </div>
+  </section>
+
+  <!-- WAVE -->
+  <svg class="wave" viewBox="0 0 1440 100">
+    <path
+      fill="#f6f2f7"
+      d="M0,32L60,58.7C120,85,240,139,360,149.3C480,160,600,128,720,112C840,96,960,96,1080,96C1200,96,1320,96,1380,96L1440,96V100H0Z"
+    ></path>
+  </svg>
+
+  <main>
+    <!-- QUOTES -->
+    <div class="quote-box">
+      <h2>Voices of Hope</h2>
+      <div id="spinner"></div>
+      <p id="quoteText"></p>
+      
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-section" id="contactSection">
+        <h2>Contact Us</h2>
+        <form id="contactForm" novalidate>
+          <label>Name *</label>
+          <input id="name" required />
+
+          <label>Email *</label>
+          <input id="email" type="email" required />
+          <div id="emailError" class="error-msg">
+            Please enter a valid email address.
+          </div>
+
+          <label>Message</label>
+          <textarea id="message"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div id="submitted">
+        <h3>Thank You!</h3>
+        <p>Your response has been submitted.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 JaruratCare • Cancer Awareness & Support</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
